@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="form-register">
-            <h1>Register</h1>
+            <h1 class="heading-1-form">Register</h1>
         </div>
         <div class="form-container">
-            <form action="" autocomplete="off">
+            <form action="" autocomplete="off" spellcheck="false">
                 <div class="form-content">
                     <label for="displayname">Display Name</label>
                     <input type="text" name="Display Name" id="displayname" placeholder="Tên hiển thị (có thể là biệt danh, hoặc tên thật....)">
@@ -38,13 +38,16 @@
                     <div class="gender-group">
                         <label>Gender</label>
                             <div class="radio-options">
-                                <label for="male">Male</label>
-                                <input type="radio" name="Gender" id="male">
-                                <label for="female">Female</label>
-                                <input type="radio" name="Gender" id="female">
-                                <label for="other">Other</label>
-                                <input type="radio" name="Gender" id="other">
-                            </div>
+  <label for="male">
+    <input type="radio" name="Gender" id="male"> Male
+  </label>
+  <label for="female">
+    <input type="radio" name="Gender" id="female"> Female
+  </label>
+  <label for="other">
+    <input type="radio" name="Gender" id="other"> Other
+  </label>
+</div>
                         
                     </div>
                 </div>
@@ -88,7 +91,7 @@
                     </div>
                     
                 </div>
-                <button type="submit">REGISTER</button>
+                <button type="submit" class="form-btn">REGISTER</button>
             </form>
 
         </div>
